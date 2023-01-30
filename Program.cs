@@ -11,7 +11,7 @@ namespace Algorithm_program
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome To Algorithm Programs");
-            Console.WriteLine("1.Permutation\n2.Binary Search Word\n3.Insertion Sort word\n4.Bubble Sort\n5.Merge Sort ");
+            Console.WriteLine("1.Permutation\n2.Binary Search Word\n3.Insertion Sort word\n4.Bubble Sort\n5.Merge Sort\n6.Anagram Detections ");
             int Choice = Convert.ToInt32(Console.ReadLine());
             switch (Choice)
             {
@@ -60,7 +60,10 @@ namespace Algorithm_program
                         Console.Write(B[i] + " ");
                     }
                     break;
-
+                case 6:
+                    AnagramDetections detections = new AnagramDetections();
+                    detections.DetectingAnagrams();
+                    break;
             }
     }
 }

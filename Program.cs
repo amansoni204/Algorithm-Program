@@ -35,7 +35,7 @@ namespace Algorithm_program
                     break;
                 case 3:
                     InsertionSort sortword = new InsertionSort();
-                    string[] names = { "Raju ", "Shayam ", "Baburao Ganptrao wapte", "Gabbar sing" };
+                    string[] names = { "Vijay Sing", "Gabbar Sing", "Raju", "Shayam", "Baburao Ganpat Vapte" };
                     sortword.InsertSort(names);
                     foreach (var item in names)
                     {

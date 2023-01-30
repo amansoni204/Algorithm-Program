@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Algorithm_program
 {
-    internal class Permutation
+    internal class BinarySearchWord
     {
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome To Algorithm Programs");
-            Console.WriteLine("1.Permutation ");
+            Console.WriteLine("1.Permutation\n2.Binary Search Word ");
             int Choice = Convert.ToInt32(Console.ReadLine());
             switch (Choice)
             {
@@ -20,6 +20,18 @@ namespace Algorithm_program
                     String str = "ABC";
                     int n = str.Length;
                     permutation.permute(str, 0, n - 1);
+                    break;
+                case 2:
+                    BinarySearchWord searchWord = new BinarySearchWord();
+                    String[] arr = { "contribute", "geeks", "ide", "practice" };
+                    String x = "ide";
+                    int result = searchWord.binarySearch(arr, x);
+
+                    if (result == -1)
+                        Console.WriteLine("Element not present");
+                    else
+                        Console.WriteLine("Element found at "
+                                        + "index " + result);
                     break;
             }
     }
